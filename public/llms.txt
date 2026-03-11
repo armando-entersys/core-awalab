@@ -1,0 +1,30 @@
+# Awalab de Mexico
+
+> Comercializadora industrial mexicana con +25 anos de experiencia.
+> Especialistas en equipo de laboratorio, seguridad industrial y
+> tratamiento de agua.
+
+## Lineas de Negocio
+- Laboratorio: Equipo e insumos (HACH, XYLEM, MERCK MILLIPORE, VELAB, Felisa, ATAGO, YSI)
+- Seguridad Industrial: EPP y equipos (MAPA, GOLDEN EAGLE, JSP, ARMADA, ABUS)
+- Tratamiento de Agua: Sistemas PTAR (IWAKI, TRUWATER, CLACK, HYDRANAUTICS)
+
+## Certificaciones
+- ISO 9001:2015
+- Acreditacion EMA (Entidad Mexicana de Acreditacion)
+- Registro CONAGUA
+
+## Clientes
+CocaCola, MercadoLibre, Herdez, Grupo Mexico, Kimberly Clark,
+BioPappel, Grupo Modelo, Philip Morris, SGS, McCormick
+
+## Servicios
+- Plantas de tratamiento de agua residual (PTAR)
+- Metrologia y calibracion (acreditacion EMA)
+- Mantenimiento preventivo y correctivo
+- Consultoria (Six Sigma, KAIZEN)
+
+## Contacto
+- Web: https://awalabdemexico.entersys.mx
+- WhatsApp: +52 776 227 7069
+- Ubicacion: Tula de Allende, Hidalgo, Mexico

@@ -1,0 +1,58 @@
+version: "3.8"
+
+services:
+  awalab-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID}
+        NEXT_PUBLIC_GTM_ID: ${NEXT_PUBLIC_GTM_ID}
+        NEXT_PUBLIC_RECAPTCHA_SITE_KEY: ${NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+    container_name: awalab-web
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - RECAPTCHA_SECRET_KEY=${RECAPTCHA_SECRET_KEY}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+      - NOTIFICATION_EMAIL=${NOTIFICATION_EMAIL}
+      - NOTIFICATION_WHATSAPP=${NOTIFICATION_WHATSAPP}
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+          cpus: "0.25"
+        # IMPORTANTE: SOLO soft limits (reservations).
+        # NUNCA usar limits/mem_limit — regla critica EnterSys.
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      # HTTP Router
+      - "traefik.http.routers.awalab-web.rule=Host(`awalabdemexico.entersys.mx`)"
+      - "traefik.http.routers.awalab-web.entrypoints=websecure"
+      - "traefik.http.routers.awalab-web.tls=true"
+      - "traefik.http.routers.awalab-web.tls.certresolver=letsencrypt"
+      # Service
+      - "traefik.http.services.awalab-web.loadbalancer.server.port=3000"
+      # Security Headers
+      - "traefik.http.middlewares.awalab-headers.headers.customResponseHeaders.X-Frame-Options=SAMEORIGIN"
+      - "traefik.http.middlewares.awalab-headers.headers.customResponseHeaders.X-Content-Type-Options=nosniff"
+      - "traefik.http.middlewares.awalab-headers.headers.customResponseHeaders.Referrer-Policy=strict-origin-when-cross-origin"
+      - "traefik.http.middlewares.awalab-headers.headers.customResponseHeaders.Permissions-Policy=camera=(), microphone=(), geolocation=()"
+      - "traefik.http.middlewares.awalab-headers.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.awalab-headers.headers.stsIncludeSubdomains=true"
+      - "traefik.http.routers.awalab-web.middlewares=awalab-headers"
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+networks:
+  traefik:
+    external: true
