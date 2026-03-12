@@ -125,6 +125,7 @@ export const card = {
   border: `1px solid ${colors.border}`,
   boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
   transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
+  p: 4,
   '&:hover': {
     transform: 'translateY(-4px)',
     boxShadow: '0 12px 40px rgba(30,74,113,0.08)',

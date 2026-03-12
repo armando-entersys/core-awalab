@@ -336,7 +336,7 @@ export default function HomePage() {
               industrial preferida en Mexico
             </Typography>
           </FadeInOnScroll>
-          <Grid container spacing={3}>
+          <Grid container spacing={4}>
             {VALUE_PROPS.map((prop, index) => (
               <Grid key={prop.title} xs={12} sm={6} md={3}>
                 <FadeInOnScroll delay={index * 0.1} direction="up">
