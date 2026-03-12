@@ -122,7 +122,7 @@ export default function HomePage() {
                 letterSpacing: '-0.02em',
               }}
             >
-              Soluciones Industriales que Transforman tu Operacion
+              Tu Aliado Industrial de Confianza
             </Typography>
             <Typography
               variant="h5"
@@ -135,8 +135,9 @@ export default function HomePage() {
                 maxWidth: 600,
               }}
             >
-              Equipo de laboratorio, seguridad industrial y tratamiento de agua con las mejores
-              marcas del mundo. Certificados ISO 9001, EMA y CONAGUA.
+              Mas de 25 anos distribuyendo las mejores marcas en laboratorio, seguridad industrial
+              y tratamiento de agua. Entregas puntuales, atencion personalizada y +100,000 productos
+              disponibles para tu operacion.
             </Typography>
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
               <Button
@@ -266,8 +267,8 @@ export default function HomePage() {
                   src={`/img/clientes/${client.file}`}
                   alt={client.name}
                   width={120}
-                  height={60}
-                  style={{ objectFit: 'contain', height: 60, width: 'auto' }}
+                  height={48}
+                  style={{ objectFit: 'contain', width: 120, height: 48 }}
                 />
               </Box>
             ))}
@@ -315,7 +316,7 @@ export default function HomePage() {
               lineHeight: 1.7,
             }}
           >
-            Tres lineas especializadas para cubrir todas las necesidades de tu industria
+            Somos tu solucion integral: distribuimos equipo, insumos y sistemas de las marcas lideres a nivel mundial
           </Typography>
           <Grid container spacing={4}>
             {BUSINESS_LINES.map((line) => (
@@ -496,12 +497,13 @@ export default function HomePage() {
               textAlign: 'center',
               color: 'text.secondary',
               mb: 8,
-              maxWidth: 560,
+              maxWidth: 620,
               mx: 'auto',
               lineHeight: 1.7,
             }}
           >
-            Nuestras certificaciones y acreditaciones avalan la calidad de nuestros productos y servicios
+            Pasion, Confianza y Capacidad. Somos la comercializadora que respalda tu operacion con
+            certificaciones de clase mundial y un compromiso real con tu industria
           </Typography>
           <Grid container spacing={4} justifyContent="center">
             {CERTIFICATIONS.map((cert) => {

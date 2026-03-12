@@ -43,10 +43,9 @@ const certifications = [
 ];
 
 const socialLinks = [
-  { icon: <FacebookIcon />, href: '#', label: 'Facebook' },
-  { icon: <LinkedInIcon />, href: '#', label: 'LinkedIn' },
-  { icon: <InstagramIcon />, href: '#', label: 'Instagram' },
-  { icon: <YouTubeIcon />, href: '#', label: 'YouTube' },
+  { icon: <FacebookIcon />, href: 'https://www.facebook.com/AwalabMX', label: 'Facebook' },
+  { icon: <LinkedInIcon />, href: 'https://www.linkedin.com/company/awalabmx', label: 'LinkedIn' },
+  { icon: <InstagramIcon />, href: 'https://www.instagram.com/awalabdemexico', label: 'Instagram' },
 ];
 
 const linkHoverSx = {

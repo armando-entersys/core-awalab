@@ -11,11 +11,15 @@ import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_NAME} — Soluciones Industriales`,
+    default: `${SITE_NAME} — Tu Aliado Industrial de Confianza`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
+  icons: {
+    icon: '/img/icono.png',
+    apple: '/img/icono.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'es_MX',
