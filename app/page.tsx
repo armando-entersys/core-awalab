@@ -186,22 +186,12 @@ export default function HomePage() {
             >
               Tu Aliado Industrial
               <br />
-              <Box
-                component="span"
-                sx={{
-                  background: 'linear-gradient(90deg, #4FC3F7 0%, #81D4FA 50%, #B3E5FC 100%)',
-                  backgroundClip: 'text',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                }}
-              >
-                de Confianza
-              </Box>
+              de Confianza
             </Typography>
             <Typography
               variant="h5"
               sx={{
-                color: 'rgba(255,255,255,0.85)',
+                color: 'rgba(255,255,255,0.92)',
                 fontWeight: 400,
                 mb: 5,
                 lineHeight: 1.75,
@@ -220,23 +210,24 @@ export default function HomePage() {
                 variant="contained"
                 size="large"
                 sx={{
-                  background: 'linear-gradient(135deg, #FFFFFF 0%, #E3F2FD 100%)',
+                  backgroundColor: '#FFFFFF',
                   color: '#1E4A71',
                   fontWeight: 700,
                   px: 5,
                   py: 1.75,
-                  fontSize: '1rem',
+                  fontSize: '1.05rem',
                   borderRadius: '12px',
                   textTransform: 'none',
-                  boxShadow: '0 4px 24px rgba(10,135,198,0.25)',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
                   animation: 'ctaPulse 3s ease-in-out infinite',
                   '@keyframes ctaPulse': {
-                    '0%, 100%': { boxShadow: '0 4px 24px rgba(10,135,198,0.25)' },
-                    '50%': { boxShadow: '0 8px 40px rgba(10,135,198,0.45)' },
+                    '0%, 100%': { boxShadow: '0 4px 20px rgba(0,0,0,0.2)' },
+                    '50%': { boxShadow: '0 8px 36px rgba(255,255,255,0.3)' },
                   },
                   '&:hover': {
-                    background: 'linear-gradient(135deg, #FFFFFF 0%, #BBDEFB 100%)',
+                    backgroundColor: '#F0F4F8',
                     transform: 'translateY(-2px)',
+                    boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
                   },
                   transition: 'all 0.3s ease',
                 }}
@@ -249,20 +240,19 @@ export default function HomePage() {
                 variant="outlined"
                 size="large"
                 sx={{
-                  borderColor: 'rgba(255,255,255,0.4)',
+                  borderColor: '#FFFFFF',
                   borderWidth: 2,
                   color: '#FFFFFF',
-                  fontWeight: 600,
+                  fontWeight: 700,
                   px: 5,
                   py: 1.65,
-                  fontSize: '1rem',
+                  fontSize: '1.05rem',
                   borderRadius: '12px',
                   textTransform: 'none',
-                  backdropFilter: 'blur(4px)',
                   '&:hover': {
-                    borderColor: 'rgba(255,255,255,0.8)',
+                    borderColor: '#FFFFFF',
                     borderWidth: 2,
-                    backgroundColor: 'rgba(255,255,255,0.08)',
+                    backgroundColor: 'rgba(255,255,255,0.15)',
                     transform: 'translateY(-2px)',
                   },
                   transition: 'all 0.3s ease',
@@ -381,9 +371,9 @@ export default function HomePage() {
                 <Image
                   src={`/img/clientes/${client.file}`}
                   alt={client.name}
-                  width={120}
-                  height={48}
-                  style={{ objectFit: 'contain', width: 120, height: 48 }}
+                  width={100}
+                  height={36}
+                  style={{ objectFit: 'contain', maxWidth: 100, maxHeight: 36, width: 'auto', height: 'auto' }}
                 />
               </Box>
             ))}
@@ -862,17 +852,17 @@ export default function HomePage() {
                 variant="contained"
                 size="large"
                 sx={{
-                  background: 'linear-gradient(135deg, #FFFFFF 0%, #E3F2FD 100%)',
+                  backgroundColor: '#FFFFFF',
                   color: '#1E4A71',
                   fontWeight: 700,
                   px: 5,
                   py: 1.75,
-                  fontSize: '1rem',
+                  fontSize: '1.05rem',
                   borderRadius: '12px',
                   textTransform: 'none',
-                  boxShadow: '0 4px 24px rgba(0,0,0,0.2)',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
                   '&:hover': {
-                    background: 'linear-gradient(135deg, #FFFFFF 0%, #BBDEFB 100%)',
+                    backgroundColor: '#F0F4F8',
                     transform: 'translateY(-2px)',
                     boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
                   },
@@ -887,20 +877,19 @@ export default function HomePage() {
                 variant="outlined"
                 size="large"
                 sx={{
-                  borderColor: 'rgba(255,255,255,0.35)',
+                  borderColor: '#FFFFFF',
                   borderWidth: 2,
                   color: '#FFFFFF',
-                  fontWeight: 600,
+                  fontWeight: 700,
                   px: 5,
                   py: 1.65,
-                  fontSize: '1rem',
+                  fontSize: '1.05rem',
                   borderRadius: '12px',
                   textTransform: 'none',
-                  backdropFilter: 'blur(4px)',
                   '&:hover': {
-                    borderColor: 'rgba(255,255,255,0.7)',
+                    borderColor: '#FFFFFF',
                     borderWidth: 2,
-                    backgroundColor: 'rgba(255,255,255,0.08)',
+                    backgroundColor: 'rgba(255,255,255,0.15)',
                     transform: 'translateY(-2px)',
                   },
                   transition: 'all 0.3s ease',
