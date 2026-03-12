@@ -6,6 +6,8 @@ import { Card, type CardProps } from '@mui/material';
 interface GlowCardProps extends CardProps {
   glowColor?: string;
   glowIntensity?: number;
+  component?: React.ElementType;
+  href?: string;
 }
 
 export function GlowCard({
