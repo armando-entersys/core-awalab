@@ -12,6 +12,9 @@ import InventoryIcon from '@mui/icons-material/Inventory';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import { FadeInOnScroll } from '@/components/ui/FadeInOnScroll';
 import { CountUp } from '@/components/ui/CountUp';
+import { ParticleNetwork } from '@/components/ui/ParticleNetwork';
+import { TypeWriter } from '@/components/ui/TypeWriter';
+import { GlowCard } from '@/components/ui/GlowCard';
 import { JsonLd } from '@/components/seo/JsonLd';
 import {
   SITE_NAME,
@@ -149,6 +152,8 @@ export default function HomePage() {
             zIndex: 1,
           }}
         />
+        {/* Interactive particle network */}
+        <ParticleNetwork color="79, 195, 247" particleCount={45} connectionDistance={120} speed={0.25} />
         <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2, py: { xs: 12, md: 0 } }}>
           <Box sx={{ maxWidth: 720 }}>
             <Box
@@ -193,7 +198,7 @@ export default function HomePage() {
               sx={{
                 color: 'rgba(255,255,255,0.92)',
                 fontWeight: 400,
-                mb: 5,
+                mb: 2,
                 lineHeight: 1.75,
                 fontSize: { xs: '1.05rem', md: '1.25rem' },
                 maxWidth: 580,
@@ -203,6 +208,29 @@ export default function HomePage() {
               tratamiento de agua. Entregas puntuales, asesoria especializada y +100,000 productos
               disponibles para tu operacion.
             </Typography>
+            <Box sx={{ mb: 5, minHeight: 36 }}>
+              <Typography
+                component="span"
+                sx={{
+                  color: 'rgba(255,255,255,0.7)',
+                  fontSize: { xs: '0.95rem', md: '1.1rem' },
+                  fontWeight: 400,
+                }}
+              >
+                Especialistas en{' '}
+              </Typography>
+              <TypeWriter
+                words={['Equipo de Laboratorio', 'Seguridad Industrial', 'Tratamiento de Agua', 'Metrologia y Calibracion', 'Consultoria KAIZEN']}
+                speed={70}
+                deleteSpeed={35}
+                pauseTime={2500}
+                sx={{
+                  color: '#4FC3F7',
+                  fontSize: { xs: '0.95rem', md: '1.1rem' },
+                  fontWeight: 600,
+                }}
+              />
+            </Box>
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
               <Button
                 component={Link}
@@ -430,7 +458,8 @@ export default function HomePage() {
             {VALUE_PROPS.map((prop, index) => (
               <Grid key={prop.title} xs={12} sm={6} md={3}>
                 <FadeInOnScroll delay={index * 0.12} direction="up">
-                  <Card
+                  <GlowCard
+                    glowColor="rgba(10, 135, 198, 0.12)"
                     sx={{
                       height: '100%',
                       p: 3,
@@ -473,7 +502,7 @@ export default function HomePage() {
                         {prop.description}
                       </Typography>
                     </CardContent>
-                  </Card>
+                  </GlowCard>
                 </FadeInOnScroll>
               </Grid>
             ))}
