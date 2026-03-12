@@ -11,6 +11,7 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import BoltIcon from '@mui/icons-material/Bolt';
 import { generatePageMetadata } from '@/lib/seo';
 import { CERTIFICATIONS, IMPACT_NUMBERS } from '@/lib/constants';
+import { btnPrimaryOnDark, btnSecondaryOnDark } from '@/lib/design-tokens';
 import { FadeInOnScroll } from '@/components/ui/FadeInOnScroll';
 import { CountUp } from '@/components/ui/CountUp';
 import { GlowCard } from '@/components/ui/GlowCard';
@@ -475,52 +476,10 @@ export default function NosotrosPage() {
               Mas de 500 empresas ya confian en Awalab como su proveedor estrategico.
             </Typography>
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent="center">
-              <Button
-                component={Link}
-                href="/cotizacion"
-                variant="contained"
-                size="large"
-                sx={{
-                  backgroundColor: '#FFFFFF',
-                  color: '#1E4A71',
-                  fontWeight: 700,
-                  px: 5,
-                  py: 1.75,
-                  fontSize: '1.05rem',
-                  borderRadius: '12px',
-                  textTransform: 'none',
-                  '&:hover': {
-                    backgroundColor: '#F0F4F8',
-                    transform: 'translateY(-2px)',
-                    boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
-                  },
-                  transition: 'all 0.3s ease',
-                }}
-              >
+              <Button component={Link} href="/cotizacion" variant="contained" size="large" sx={btnPrimaryOnDark}>
                 Solicitar Cotizacion
               </Button>
-              <Button
-                component={Link}
-                href="/contacto"
-                variant="outlined"
-                size="large"
-                sx={{
-                  borderColor: '#FFFFFF',
-                  borderWidth: 2,
-                  color: '#FFFFFF',
-                  fontWeight: 700,
-                  px: 5,
-                  py: 1.65,
-                  borderRadius: '12px',
-                  textTransform: 'none',
-                  '&:hover': {
-                    borderColor: '#FFFFFF',
-                    borderWidth: 2,
-                    backgroundColor: 'rgba(255,255,255,0.15)',
-                  },
-                  transition: 'all 0.3s ease',
-                }}
-              >
+              <Button component={Link} href="/contacto" variant="outlined" size="large" sx={btnSecondaryOnDark}>
                 Contactanos
               </Button>
             </Stack>

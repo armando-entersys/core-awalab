@@ -2,6 +2,13 @@ import { Box, Container, Typography, Button, Grid, Stack, CardContent } from '@m
 import Link from 'next/link';
 import Image from 'next/image';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
+import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
+import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
+import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
+import ScienceOutlinedIcon from '@mui/icons-material/ScienceOutlined';
+import HealthAndSafetyOutlinedIcon from '@mui/icons-material/HealthAndSafetyOutlined';
+import WaterDropOutlinedIcon from '@mui/icons-material/WaterDropOutlined';
 import { FadeInOnScroll } from '@/components/ui/FadeInOnScroll';
 import { CountUp } from '@/components/ui/CountUp';
 import { ParticleNetwork } from '@/components/ui/ParticleNetwork';
@@ -53,31 +60,31 @@ const CERT_IMAGES: Record<string, { file: string; alt: string }> = {
 
 const VALUE_PROPS = [
   {
-    number: '01',
+    icon: <LocalShippingOutlinedIcon sx={{ fontSize: 28 }} />,
     title: 'Entregas Puntuales',
     description: 'Red de distribucion propia con cobertura nacional. Tu pedido llega cuando lo necesitas.',
   },
   {
-    number: '02',
+    icon: <CategoryOutlinedIcon sx={{ fontSize: 28 }} />,
     title: '+100,000 Productos',
     description: 'El catalogo mas completo en laboratorio, seguridad industrial y tratamiento de agua.',
   },
   {
-    number: '03',
+    icon: <EngineeringOutlinedIcon sx={{ fontSize: 28 }} />,
     title: 'Asesoria Especializada',
     description: 'Equipo tecnico con mas de 25 anos de experiencia para ayudarte a elegir la mejor solucion.',
   },
   {
-    number: '04',
+    icon: <HandshakeOutlinedIcon sx={{ fontSize: 28 }} />,
     title: 'Alianza de Confianza',
     description: 'Relaciones a largo plazo con mas de 500 empresas que confian en nosotros como su proveedor.',
   },
 ];
 
-const LINE_LABELS: Record<string, string> = {
-  laboratorio: 'Lab',
-  'seguridad-industrial': 'Seg',
-  'tratamiento-de-agua': 'H₂O',
+const lineIcons: Record<string, React.ReactNode> = {
+  laboratorio: <ScienceOutlinedIcon sx={{ fontSize: 28 }} />,
+  'seguridad-industrial': <HealthAndSafetyOutlinedIcon sx={{ fontSize: 28 }} />,
+  'tratamiento-de-agua': <WaterDropOutlinedIcon sx={{ fontSize: 28 }} />,
 };
 
 export default function HomePage() {
@@ -335,18 +342,21 @@ export default function HomePage() {
                 <FadeInOnScroll delay={index * 0.1} direction="up">
                   <GlowCard glowColor="rgba(30,74,113,0.06)" sx={{ ...card, height: '100%', p: 3.5 }}>
                     <CardContent sx={{ p: 0 }}>
-                      <Typography
+                      <Box
                         sx={{
+                          width: 52,
+                          height: 52,
+                          borderRadius: '14px',
+                          border: `1.5px solid ${colors.accent}`,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
                           color: colors.accent,
-                          fontWeight: 700,
-                          fontSize: '0.75rem',
-                          letterSpacing: '0.08em',
                           mb: 2,
-                          fontFamily: 'monospace',
                         }}
                       >
-                        {prop.number}
-                      </Typography>
+                        {prop.icon}
+                      </Box>
                       <Typography
                         variant="h6"
                         sx={{ fontWeight: 700, mb: 1, color: colors.text, fontSize: '1rem' }}
@@ -400,18 +410,22 @@ export default function HomePage() {
                     href={line.slug}
                   >
                     <CardContent sx={{ p: 4 }}>
-                      <Typography
+                      <Box
                         sx={{
+                          width: 52,
+                          height: 52,
+                          borderRadius: '14px',
+                          border: `1.5px solid ${colors.accent}`,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
                           color: colors.accent,
-                          fontWeight: 700,
-                          fontSize: '0.7rem',
-                          letterSpacing: '0.15em',
-                          textTransform: 'uppercase',
-                          mb: 1.5,
+                          mb: 2,
+                          transition: 'all 0.3s ease',
                         }}
                       >
-                        {LINE_LABELS[line.id]}
-                      </Typography>
+                        {lineIcons[line.id]}
+                      </Box>
                       <Typography variant="h5" sx={{ fontWeight: 700, mb: 1.5, color: colors.text, fontSize: '1.2rem' }}>
                         {line.name}
                       </Typography>

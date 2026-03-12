@@ -82,7 +82,7 @@ export function Footer() {
         },
       }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth="lg" sx={{ px: { xs: 3, md: 4 } }}>
         {/* Main 4-column layout */}
         <Grid container spacing={4}>
           {/* Column 1: Logo + Description + Social */}

@@ -9,6 +9,7 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import { generatePageMetadata } from '@/lib/seo';
+import { btnPrimaryOnDark, btnSecondaryOnDark } from '@/lib/design-tokens';
 import { FadeInOnScroll } from '@/components/ui/FadeInOnScroll';
 import { GlowCard } from '@/components/ui/GlowCard';
 
@@ -271,52 +272,10 @@ export default function ServiciosPage() {
               Nuestro equipo de ingenieros certificados esta listo para disenar la solucion que tu operacion necesita.
             </Typography>
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent="center">
-              <Button
-                component={Link}
-                href="/cotizacion"
-                variant="contained"
-                size="large"
-                sx={{
-                  backgroundColor: '#FFFFFF',
-                  color: '#1E4A71',
-                  fontWeight: 700,
-                  px: 5,
-                  py: 1.75,
-                  fontSize: '1.05rem',
-                  borderRadius: '12px',
-                  textTransform: 'none',
-                  '&:hover': {
-                    backgroundColor: '#F0F4F8',
-                    transform: 'translateY(-2px)',
-                    boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
-                  },
-                  transition: 'all 0.3s ease',
-                }}
-              >
+              <Button component={Link} href="/cotizacion" variant="contained" size="large" sx={btnPrimaryOnDark}>
                 Solicitar Cotizacion
               </Button>
-              <Button
-                component={Link}
-                href="/contacto"
-                variant="outlined"
-                size="large"
-                sx={{
-                  borderColor: '#FFFFFF',
-                  borderWidth: 2,
-                  color: '#FFFFFF',
-                  fontWeight: 700,
-                  px: 5,
-                  py: 1.65,
-                  borderRadius: '12px',
-                  textTransform: 'none',
-                  '&:hover': {
-                    borderColor: '#FFFFFF',
-                    borderWidth: 2,
-                    backgroundColor: 'rgba(255,255,255,0.15)',
-                  },
-                  transition: 'all 0.3s ease',
-                }}
-              >
+              <Button component={Link} href="/contacto" variant="outlined" size="large" sx={btnSecondaryOnDark}>
                 Contactar equipo tecnico
               </Button>
             </Stack>

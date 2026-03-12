@@ -54,19 +54,16 @@ export const CLIENTS = [
 ] as const;
 
 export const NAV_ITEMS = [
-  { label: 'Inicio', href: '/' },
+  { label: 'Nosotros', href: '/nosotros' },
   {
-    label: 'Nosotros',
-    href: '/nosotros',
+    label: 'Soluciones',
+    href: '/laboratorio',
     children: [
-      { label: 'Historia', href: '/nosotros/historia' },
-      { label: 'Equipo', href: '/nosotros/equipo' },
-      { label: 'Acreditaciones', href: '/nosotros/acreditaciones' },
+      { label: 'Laboratorio', href: '/laboratorio' },
+      { label: 'Seguridad Industrial', href: '/seguridad-industrial' },
+      { label: 'Tratamiento de Agua', href: '/tratamiento-de-agua' },
     ],
   },
-  { label: 'Laboratorio', href: '/laboratorio' },
-  { label: 'Seguridad Industrial', href: '/seguridad-industrial' },
-  { label: 'Tratamiento de Agua', href: '/tratamiento-de-agua' },
   {
     label: 'Servicios',
     href: '/servicios',
@@ -77,7 +74,6 @@ export const NAV_ITEMS = [
       { label: 'Consultoria', href: '/servicios/consultoria' },
     ],
   },
-  { label: 'Blog', href: '/blog' },
   { label: 'Contacto', href: '/contacto' },
 ] as const;
 
