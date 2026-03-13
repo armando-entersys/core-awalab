@@ -66,7 +66,7 @@ export default function MantenimientoPage() {
       <ServiceDetailPage
         title="Mantenimiento Industrial"
         subtitle="Programas de mantenimiento para maximizar la vida util de tus equipos y minimizar tiempos muertos en tu operacion."
-        heroImage="/img/hero/hero-servicios.png"
+        heroImage="/img/hero/hero-mantenimiento.png"
         heroAlt="Mantenimiento industrial preventivo y correctivo"
         badge="ISO 9001:2015"
         stats={[

@@ -232,7 +232,10 @@ export default function HeroScene3D() {
     <div
       style={{
         position: 'absolute',
-        inset: 0,
+        top: 0,
+        right: 0,
+        bottom: 0,
+        width: '55%',
         zIndex: 1,
         pointerEvents: 'auto',
       }}

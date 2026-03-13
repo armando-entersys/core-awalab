@@ -1,0 +1,93 @@
+[
+  {
+    "id": "cocacola",
+    "name": "CocaCola",
+    "industry": "Alimentos y Bebidas",
+    "tier": 1,
+    "lines": ["laboratorio", "tratamiento-de-agua"]
+  },
+  {
+    "id": "mercadolibre",
+    "name": "MercadoLibre",
+    "industry": "Tecnologia / Logistica",
+    "tier": 1,
+    "lines": ["seguridad-industrial"]
+  },
+  {
+    "id": "herdez",
+    "name": "Herdez",
+    "industry": "Alimentos y Bebidas",
+    "tier": 1,
+    "lines": ["laboratorio", "seguridad-industrial"]
+  },
+  {
+    "id": "grupo-mexico",
+    "name": "Grupo Mexico",
+    "industry": "Mineria",
+    "tier": 1,
+    "lines": ["laboratorio", "seguridad-industrial", "tratamiento-de-agua"]
+  },
+  {
+    "id": "kimberly-clark",
+    "name": "Kimberly Clark",
+    "industry": "Productos de Consumo",
+    "tier": 1,
+    "lines": ["laboratorio", "seguridad-industrial"]
+  },
+  {
+    "id": "biopappel",
+    "name": "BioPappel",
+    "industry": "Papel y Empaques",
+    "tier": 1,
+    "lines": ["laboratorio", "tratamiento-de-agua"]
+  },
+  {
+    "id": "grupo-modelo",
+    "name": "Grupo Modelo",
+    "industry": "Alimentos y Bebidas",
+    "tier": 1,
+    "lines": ["laboratorio", "tratamiento-de-agua"]
+  },
+  {
+    "id": "philip-morris",
+    "name": "Philip Morris",
+    "industry": "Tabaco",
+    "tier": 1,
+    "lines": ["laboratorio", "seguridad-industrial"]
+  },
+  {
+    "id": "sgs",
+    "name": "SGS",
+    "industry": "Inspeccion y Certificacion",
+    "tier": 1,
+    "lines": ["laboratorio"]
+  },
+  {
+    "id": "mccormick",
+    "name": "McCormick",
+    "industry": "Alimentos y Bebidas",
+    "tier": 1,
+    "lines": ["laboratorio", "seguridad-industrial"]
+  },
+  {
+    "id": "ica",
+    "name": "ICA",
+    "industry": "Construccion e Infraestructura",
+    "tier": 2,
+    "lines": ["tratamiento-de-agua"]
+  },
+  {
+    "id": "geodis",
+    "name": "Geodis",
+    "industry": "Logistica",
+    "tier": 2,
+    "lines": ["seguridad-industrial"]
+  },
+  {
+    "id": "chemtreat",
+    "name": "ChemTreat",
+    "industry": "Tratamiento Quimico de Agua",
+    "tier": 2,
+    "lines": ["tratamiento-de-agua"]
+  }
+]

@@ -1,0 +1,12 @@
+[
+  { "name": "Turbidimetro TL2300", "brand": "HACH", "category": "Turbidimetros", "description": "Turbidimetro de mesa EPA con rango 0-4000 NTU. Fuente de luz LED.", "featured": true },
+  { "name": "Espectrofotometro DR3900", "brand": "HACH", "category": "Espectrofotometros", "description": "Espectrofotometro VIS con tecnologia RFID para reactivos, 340-900 nm.", "featured": true },
+  { "name": "Medidor multiparametro HQ40d", "brand": "HACH", "category": "Medidores", "description": "Medidor digital de mesa para pH, conductividad, OD y mas. Doble entrada.", "featured": true },
+  { "name": "Balanza analitica Adventurer", "brand": "OHAUS", "category": "Balanzas", "description": "Balanza analitica 220g x 0.1mg con calibracion interna automatica.", "featured": false },
+  { "name": "Microscopio binocular VE-B6", "brand": "VELAB", "category": "Microscopios", "description": "Microscopio biologico binocular con iluminacion LED y 4 objetivos.", "featured": false },
+  { "name": "Estufa de secado FE-292", "brand": "Felisa", "category": "Estufas", "description": "Estufa de secado y esterilizacion 45L, temperatura hasta 300C.", "featured": false },
+  { "name": "Agitador magnetico con calentamiento", "brand": "VELAB", "category": "Agitadores", "description": "Agitador magnetico digital con placa de calentamiento ceramica.", "featured": false },
+  { "name": "Refractometro digital PAL-1", "brand": "ATAGO", "category": "Refractometros", "description": "Refractometro digital de bolsillo, escala Brix 0-53%, compensacion automatica.", "featured": false },
+  { "name": "Pesas patron clase F1", "brand": "Troemner", "category": "Calibracion", "description": "Set de pesas patron OIML clase F1 con certificado de calibracion.", "featured": false },
+  { "name": "Reactivos DPD cloro libre", "brand": "HACH", "category": "Reactivos", "description": "Reactivos en polvo DPD para determinacion de cloro libre, 100 tests.", "featured": false }
+]

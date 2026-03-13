@@ -1,0 +1,182 @@
+[
+  {
+    "id": "hach",
+    "name": "HACH",
+    "line": "laboratorio",
+    "country": "Estados Unidos",
+    "specialty": "Instrumentos de analisis de agua y reactivos",
+    "website": "https://www.hach.com",
+    "featured": true
+  },
+  {
+    "id": "xylem",
+    "name": "XYLEM",
+    "line": "laboratorio",
+    "country": "Estados Unidos",
+    "specialty": "Tecnologia de agua y soluciones de medicion",
+    "website": "https://www.xylem.com",
+    "featured": true
+  },
+  {
+    "id": "merck-millipore",
+    "name": "MERCK MILLIPORE",
+    "line": "laboratorio",
+    "country": "Alemania",
+    "specialty": "Reactivos, filtracion y purificacion de agua para laboratorio",
+    "website": "https://www.merckmillipore.com",
+    "featured": true
+  },
+  {
+    "id": "ysi",
+    "name": "YSI",
+    "line": "laboratorio",
+    "country": "Estados Unidos",
+    "specialty": "Instrumentos de medicion de calidad del agua",
+    "website": "https://www.ysi.com",
+    "featured": true
+  },
+  {
+    "id": "eisco",
+    "name": "EISCO",
+    "line": "laboratorio",
+    "country": "India",
+    "specialty": "Equipo educativo y de laboratorio cientifico",
+    "website": "https://www.eisco.com",
+    "featured": false
+  },
+  {
+    "id": "velab",
+    "name": "VELAB",
+    "line": "laboratorio",
+    "country": "Mexico",
+    "specialty": "Microscopios y equipo optico de laboratorio",
+    "website": "https://www.velab.com",
+    "featured": false
+  },
+  {
+    "id": "felisa",
+    "name": "Felisa",
+    "line": "laboratorio",
+    "country": "Mexico",
+    "specialty": "Estufas, incubadoras y equipo de laboratorio",
+    "website": "https://www.felisa.com.mx",
+    "featured": false
+  },
+  {
+    "id": "troemner",
+    "name": "Troemner",
+    "line": "laboratorio",
+    "country": "Estados Unidos",
+    "specialty": "Pesas patron y accesorios de calibracion",
+    "website": "https://www.troemner.com",
+    "featured": false
+  },
+  {
+    "id": "atago",
+    "name": "ATAGO",
+    "line": "laboratorio",
+    "country": "Japon",
+    "specialty": "Refractometros y medidores de concentracion",
+    "website": "https://www.atago.net",
+    "featured": false
+  },
+  {
+    "id": "mapa",
+    "name": "MAPA",
+    "line": "seguridad-industrial",
+    "country": "Francia",
+    "specialty": "Guantes de proteccion industrial y quimica",
+    "website": "https://www.mapa-pro.com",
+    "featured": true
+  },
+  {
+    "id": "golden-eagle",
+    "name": "GOLDEN EAGLE",
+    "line": "seguridad-industrial",
+    "country": "Mexico",
+    "specialty": "Calzado de seguridad industrial",
+    "website": null,
+    "featured": true
+  },
+  {
+    "id": "bisley",
+    "name": "BISLEY",
+    "line": "seguridad-industrial",
+    "country": "Australia",
+    "specialty": "Ropa de trabajo y alta visibilidad",
+    "website": "https://www.bisley.com.au",
+    "featured": false
+  },
+  {
+    "id": "jsp",
+    "name": "JSP",
+    "line": "seguridad-industrial",
+    "country": "Reino Unido",
+    "specialty": "Cascos, proteccion visual y auditiva",
+    "website": "https://www.jspsafety.com",
+    "featured": true
+  },
+  {
+    "id": "armada",
+    "name": "ARMADA",
+    "line": "seguridad-industrial",
+    "country": "Mexico",
+    "specialty": "Equipos de proteccion personal EPP",
+    "website": null,
+    "featured": false
+  },
+  {
+    "id": "abus",
+    "name": "ABUS",
+    "line": "seguridad-industrial",
+    "country": "Alemania",
+    "specialty": "Candados de bloqueo y etiquetado LOTO",
+    "website": "https://www.abus.com",
+    "featured": false
+  },
+  {
+    "id": "dermacare",
+    "name": "DERMACARE",
+    "line": "seguridad-industrial",
+    "country": "Mexico",
+    "specialty": "Proteccion dermatologica industrial",
+    "website": null,
+    "featured": false
+  },
+  {
+    "id": "iwaki",
+    "name": "IWAKI",
+    "line": "tratamiento-de-agua",
+    "country": "Japon",
+    "specialty": "Bombas dosificadoras y de proceso",
+    "website": "https://www.iwaki.com",
+    "featured": true
+  },
+  {
+    "id": "truwater",
+    "name": "TRUWATER",
+    "line": "tratamiento-de-agua",
+    "country": "Australia",
+    "specialty": "Sistemas de tratamiento y filtracion de agua",
+    "website": null,
+    "featured": true
+  },
+  {
+    "id": "clack",
+    "name": "CLACK",
+    "line": "tratamiento-de-agua",
+    "country": "Estados Unidos",
+    "specialty": "Valvulas de control y sistemas de filtracion",
+    "website": "https://www.clackcorp.com",
+    "featured": true
+  },
+  {
+    "id": "hydranautics",
+    "name": "HYDRANAUTICS",
+    "line": "tratamiento-de-agua",
+    "country": "Estados Unidos",
+    "specialty": "Membranas de osmosis inversa y nanofiltracion",
+    "website": "https://www.hydranautics.com",
+    "featured": true
+  }
+]

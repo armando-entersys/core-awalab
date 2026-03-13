@@ -1,0 +1,9 @@
+[
+  { "name": "Bomba dosificadora EHN-B", "brand": "IWAKI", "category": "Bombas dosificadoras", "description": "Bomba dosificadora electromagnetica con caudal ajustable hasta 3.2 L/h, presion max 10 bar.", "featured": true },
+  { "name": "Membrana ESPA2-LD", "brand": "HYDRANAUTICS", "category": "Membranas", "description": "Membrana de osmosis inversa de baja presion para agua de pozo, alta productividad.", "featured": true },
+  { "name": "Valvula de control WS1", "brand": "CLACK", "category": "Valvulas", "description": "Valvula automatica para suavizadores y filtros, programacion digital, regeneracion por volumen.", "featured": true },
+  { "name": "Sistema de filtracion multimedia", "brand": "TRUWATER", "category": "Filtros", "description": "Filtro multimedia automatico para remocion de turbidez y solidos suspendidos.", "featured": false },
+  { "name": "Sistema de cloracion por goteo", "brand": "IWAKI", "category": "Cloracion", "description": "Sistema de cloracion proporcional al flujo con tanque de solucion y bomba dosificadora.", "featured": false },
+  { "name": "Medidor de flujo ultrasonico", "brand": "XYLEM", "category": "Medidores de flujo", "description": "Medidor de flujo ultrasonico no invasivo para tuberias de 1 a 48 pulgadas.", "featured": false },
+  { "name": "Planta PTAR compacta 5 LPS", "brand": "TRUWATER", "category": "Plantas PTAR", "description": "Planta de tratamiento de aguas residuales compacta, 5 litros por segundo, cumple NOM-001.", "featured": true }
+]

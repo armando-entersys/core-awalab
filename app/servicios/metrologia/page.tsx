@@ -53,7 +53,7 @@ export default function MetrologiaPage() {
       <ServiceDetailPage
         title="Metrologia y Calibracion"
         subtitle="Servicios acreditados ante la EMA con trazabilidad al CENAM. Certificados reconocidos oficialmente a nivel nacional e internacional."
-        heroImage="/img/hero/hero-servicios.png"
+        heroImage="/img/hero/hero-metrologia.png"
         heroAlt="Servicios de metrologia y calibracion"
         badge="Acreditacion EMA | NMX-EC-17025"
         stats={[

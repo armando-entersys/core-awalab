@@ -1,0 +1,10 @@
+[
+  { "name": "Casco EVO3 con ventilacion", "brand": "JSP", "category": "Cascos", "description": "Casco de seguridad con sistema de ventilacion, suspension de 6 puntos y ranuras universales.", "featured": true },
+  { "name": "Guantes Ultrane 553", "brand": "MAPA", "category": "Guantes", "description": "Guante de nitrilo ultraligero con excelente destreza y agarre en seco y humedo.", "featured": true },
+  { "name": "Bota industrial Commander", "brand": "GOLDEN EAGLE", "category": "Calzado", "description": "Bota de seguridad con casquillo de policarbonato, suela antiderrapante, dielectrica.", "featured": true },
+  { "name": "Lentes de seguridad Stealth", "brand": "JSP", "category": "Proteccion visual", "description": "Lentes de seguridad con lente policarbonato anti-rayaduras y anti-empanante.", "featured": false },
+  { "name": "Tapones auditivos reutilizables", "brand": "JSP", "category": "Proteccion auditiva", "description": "Tapones con cordon, NRR 25 dB, silicona hipoalergenica, lavables.", "featured": false },
+  { "name": "Respirador N95 plegable", "brand": "JSP", "category": "Proteccion respiratoria", "description": "Mascarilla N95 plegable con valvula de exhalacion para uso industrial.", "featured": false },
+  { "name": "Candado de bloqueo LOTO", "brand": "ABUS", "category": "Bloqueo LOTO", "description": "Candado de seguridad para bloqueo/etiquetado de energia, arco de acero templado.", "featured": false },
+  { "name": "Overol industrial alta visibilidad", "brand": "BISLEY", "category": "Ropa", "description": "Overol de trabajo alta visibilidad con cintas reflectivas 3M, tela ripstop.", "featured": false }
+]

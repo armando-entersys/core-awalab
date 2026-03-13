@@ -51,7 +51,7 @@ export default function PTARPage() {
       <ServiceDetailPage
         title="Plantas de Tratamiento de Agua Residual"
         subtitle="Soluciones completas de tratamiento de agua: desde el diagnostico hasta el monitoreo continuo. Registro CONAGUA."
-        heroImage="/img/hero/hero-agua.png"
+        heroImage="/img/hero/hero-ptar.png"
         heroAlt="Planta de tratamiento de agua residual PTAR"
         badge="CONAGUA | SEMARNAT"
         stats={[

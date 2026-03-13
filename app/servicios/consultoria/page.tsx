@@ -68,7 +68,7 @@ export default function ConsultoriaPage() {
       <ServiceDetailPage
         title="Consultoria Especializada"
         subtitle="Metodologias probadas para optimizar tus procesos: Six Sigma, KAIZEN y Lean Manufacturing. Resultados medibles desde el primer proyecto."
-        heroImage="/img/hero/hero-servicios.png"
+        heroImage="/img/hero/hero-consultoria.png"
         heroAlt="Consultoria Six Sigma y KAIZEN"
         badge="Six Sigma | KAIZEN | Lean"
         stats={[
