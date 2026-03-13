@@ -11,8 +11,8 @@ import HealthAndSafetyOutlinedIcon from '@mui/icons-material/HealthAndSafetyOutl
 import WaterDropOutlinedIcon from '@mui/icons-material/WaterDropOutlined';
 import { FadeInOnScroll } from '@/components/ui/FadeInOnScroll';
 import { CountUp } from '@/components/ui/CountUp';
-import { ParticleNetwork } from '@/components/ui/ParticleNetwork';
 import { TypeWriter } from '@/components/ui/TypeWriter';
+import { HeroScene3DLoader } from '@/components/ui/HeroScene3DLoader';
 import { GlowCard } from '@/components/ui/GlowCard';
 import { JsonLd } from '@/components/seo/JsonLd';
 import {
@@ -148,7 +148,7 @@ export default function HomePage() {
             zIndex: 1,
           }}
         />
-        <ParticleNetwork color="148, 163, 184" particleCount={35} connectionDistance={100} speed={0.2} />
+        <HeroScene3DLoader />
         <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2, py: { xs: 12, md: 0 } }}>
           <Box sx={{ maxWidth: 680 }}>
             <Typography
